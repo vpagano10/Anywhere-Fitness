@@ -1,0 +1,21 @@
+.home-container {
+  height: 50vh;
+  background: url("../images/Hero.jpg") center no-repeat;
+  background-size: 100%;
+  position: relative;
+  .top-info-container {
+    background-color: rgba(128, 0, 0, 0.75);
+    color: whitesmoke;
+    position: relative;
+    top: 75%;
+    left: 50%;
+    font-size: 1rem;
+    padding: 25px;
+
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 75%;
+    width: 100%;
+  }
+}

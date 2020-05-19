@@ -1,9 +1,10 @@
 import React from "react";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
-      <h1>New Anywhere Fitness Repo</h1>
+      <NavBar />
     </div>
   );
 }
