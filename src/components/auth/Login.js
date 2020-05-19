@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../utils/api";
 
+import "../../scss/Login.scss";
+
 export default function Login(props) {
   const [data, setData] = useState({
     username: "",
@@ -31,28 +33,36 @@ export default function Login(props) {
 
   return (
     <>
-      <div>
-        <h1>Login Page</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="username"
-            value={data.username}
-            onChange={handleChange}
-          />
-          <input
-            type="password"
-            name="password"
-            value={data.password}
-            onChange={handleChange}
-          />
-          <button type="submit">Submit</button>
-        </form>
-        <div>
-          <p>
-            Don't have an account? Click <Link to="/register">here</Link> to
-            sign up.
-          </p>
+      <div className="form-page-container">
+        <div className="form-container">
+          <h1 className="form-title">Login</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="username"
+              value={data.username}
+              onChange={handleChange}
+              placeholder="username"
+            />
+            <input
+              type="password"
+              name="password"
+              value={data.password}
+              onChange={handleChange}
+              placeholder="password"
+            />
+            <button type="submit">Submit</button>
+          </form>
+          <div className="bottom-form-text">
+            <p>
+              Don't have an account?
+              <br /> Click{" "}
+              <Link className="switch-link" to="/signup">
+                here
+              </Link>{" "}
+              to sign up.
+            </p>
+          </div>
         </div>
       </div>
     </>

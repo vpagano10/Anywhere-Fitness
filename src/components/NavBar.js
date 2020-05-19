@@ -8,6 +8,8 @@ import Login from "./auth/Login";
 import Logout from "./auth/Logout";
 import Home from "./Home";
 import Classes from "./Classes";
+import About from "./About";
+import Contact from "./Contact";
 
 import "../scss/NavBar.scss";
 
@@ -45,6 +47,24 @@ function NavBar() {
             <Link
               onClick={mobile ? toggleMobile : ""}
               className="nav-link"
+              to="/about"
+            >
+              About
+            </Link>
+          </li>
+          <li className={mobile ? "open" : ""}>
+            <Link
+              onClick={mobile ? toggleMobile : ""}
+              className="nav-link"
+              to="/contact"
+            >
+              Contact
+            </Link>
+          </li>
+          <li className={mobile ? "open" : ""}>
+            <Link
+              onClick={mobile ? toggleMobile : ""}
+              className="nav-link"
               to="/login"
             >
               Login
@@ -66,6 +86,8 @@ function NavBar() {
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={Register} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
       {/* ProtectedRoute */}
       <ProtectedRoute exact path="/classes" component={Classes} />
       <ProtectedRoute exact path="/logout" component={Logout} />

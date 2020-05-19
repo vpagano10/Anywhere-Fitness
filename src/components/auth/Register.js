@@ -24,28 +24,36 @@ export default function Register(props) {
 
   return (
     <>
-      <div>
-        <h1>Sign Up Page</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="username"
-            value={username}
-            onChange={(event) => setUsername(event.target.value)}
-          />
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-          <button type="submit">Submit</button>
-        </form>
-        <div>
-          <p>
-            Already have an account? Click <Link to="/login">here</Link> to
-            login.
-          </p>
+      <div className="form-page-container">
+        <div className="form-container">
+          <h1 className="form-title">Sign Up</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="username"
+              value={username}
+              onChange={(event) => setUsername(event.target.value)}
+              placeholder="username"
+            />
+            <input
+              type="password"
+              name="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              placeholder="password"
+            />
+            <button type="submit">Submit</button>
+          </form>
+          <div className="bottom-form-text">
+            <p>
+              Already have an account?
+              <br /> Click{" "}
+              <Link className="switch-link" to="/login">
+                here
+              </Link>{" "}
+              to login.
+            </p>
+          </div>
         </div>
       </div>
     </>
