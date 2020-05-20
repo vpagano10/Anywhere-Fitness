@@ -3,9 +3,9 @@ import { Link, useHistory } from "react-router-dom";
 import api from "../utils/api";
 import swal from "sweetalert";
 
-import cardioImg from "../images/Hero.jpg";
-import weightsImg from "../images/Hero.jpg";
-import kickboxingImg from "../images/Hero.jpg";
+import cardioImg from "../images/cardio.jpg";
+import weightsImg from "../images/weights.jpg";
+import kickboxingImg from "../images/kickboxing.jpg";
 
 import "../scss/Classes.scss";
 
@@ -90,9 +90,9 @@ export default function ClassesPage() {
                 <p className="class-date">{classes.class_date}</p>
               </div>
               <div>
-                {classes.type == "cardio" ? (
+                {classes.type == "Cardio" || classes.type == "cardio" ? (
                   <img className="card-image" src={cardioImg} />
-                ) : classes.type == "weights" ? (
+                ) : classes.type == "Weights" || classes.type == "weights" ? (
                   <img className="card-image" src={weightsImg} />
                 ) : (
                   <img className="card-image" src={kickboxingImg} />
