@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Anywhere-Fitness/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Anywhere-Fitness/static/js/main.d101152c.chunk.js",
-    "main.js.map": "/Anywhere-Fitness/static/js/main.d101152c.chunk.js.map",
+    "main.css": "/Anywhere-Fitness/static/css/main.df467eb9.chunk.css",
+    "main.js": "/Anywhere-Fitness/static/js/main.16d55758.chunk.js",
+    "main.js.map": "/Anywhere-Fitness/static/js/main.16d55758.chunk.js.map",
     "runtime-main.js": "/Anywhere-Fitness/static/js/runtime-main.93bac7e3.js",
     "runtime-main.js.map": "/Anywhere-Fitness/static/js/runtime-main.93bac7e3.js.map",
-    "static/js/2.6e89f1d8.chunk.js": "/Anywhere-Fitness/static/js/2.6e89f1d8.chunk.js",
-    "static/js/2.6e89f1d8.chunk.js.map": "/Anywhere-Fitness/static/js/2.6e89f1d8.chunk.js.map",
+    "static/js/2.88118774.chunk.js": "/Anywhere-Fitness/static/js/2.88118774.chunk.js",
+    "static/js/2.88118774.chunk.js.map": "/Anywhere-Fitness/static/js/2.88118774.chunk.js.map",
     "index.html": "/Anywhere-Fitness/index.html",
-    "precache-manifest.9e4406c35a38cc92428325f625769cc0.js": "/Anywhere-Fitness/precache-manifest.9e4406c35a38cc92428325f625769cc0.js",
+    "precache-manifest.4696155a95f6e80f77c48ba211d5c81d.js": "/Anywhere-Fitness/precache-manifest.4696155a95f6e80f77c48ba211d5c81d.js",
     "service-worker.js": "/Anywhere-Fitness/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Anywhere-Fitness/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.6e89f1d8.chunk.js.LICENSE.txt": "/Anywhere-Fitness/static/js/2.6e89f1d8.chunk.js.LICENSE.txt"
+    "static/css/main.df467eb9.chunk.css.map": "/Anywhere-Fitness/static/css/main.df467eb9.chunk.css.map",
+    "static/js/2.88118774.chunk.js.LICENSE.txt": "/Anywhere-Fitness/static/js/2.88118774.chunk.js.LICENSE.txt",
+    "static/media/Home.scss": "/Anywhere-Fitness/static/media/Lift.5b9ab5e0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.93bac7e3.js",
-    "static/js/2.6e89f1d8.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.d101152c.chunk.js"
+    "static/js/2.88118774.chunk.js",
+    "static/css/main.df467eb9.chunk.css",
+    "static/js/main.16d55758.chunk.js"
   ]
 }
