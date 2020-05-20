@@ -4,6 +4,9 @@
   .top-content {
     padding: 25% 0px;
     color: whitesmoke;
+    @media screen and (min-width: 768px) {
+      padding: 15% 0px;
+    }
     form {
       display: flex;
       flex-direction: column;
