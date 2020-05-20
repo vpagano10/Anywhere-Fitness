@@ -5,17 +5,19 @@ import api from "../../utils/api";
 export default function Register(props) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [role_id, setRole_id] = useState(1);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     api()
       .post("/api/auth/register", {
         username: username,
+        role_id: role_id,
         password,
       })
       .then((res) => {
-        localStorage.setItem("af-token", res.data.token);
-        props.history.push("/classes");
+        // localStorage.setItem("af-token", res.data.token);
+        props.history.push("/login");
       })
       .catch((err) => {
         console.log(err);
