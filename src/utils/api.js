@@ -6,7 +6,7 @@ export function getToken() {
 
 export default function api() {
   return axios.create({
-    baseURL: "",
+    baseURL: "https://anywhere-fitness04.herokuapp.com",
     headers: {
       Authorization: localStorage.getItem("af-token"),
     },

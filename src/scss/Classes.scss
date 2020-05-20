@@ -1,0 +1,131 @@
+.classes-page-top {
+  background-color: #212121;
+  height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/Hero2.jpg") center no-repeat;
+  background-size: cover;
+  .classes-page-title {
+    color: whitesmoke;
+    font-size: 1.25rem;
+  }
+}
+
+.add-class-container {
+  //   margin-top: 25px;
+  padding-top: 10px;
+  text-align: center;
+  .add-class-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: green;
+    opacity: 0.65;
+    border-bottom: 1px solid white;
+    transition: 0.5s ease;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid green;
+      opacity: 1;
+    }
+  }
+}
+
+.classes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  .class-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #212121;
+    color: whitesmoke;
+    margin: 10px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    .edit-delete-span {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 0.25px solid whitesmoke;
+      .edit-link {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: goldenrod;
+      }
+      .delete-link {
+        font-size: 1.25rem;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .flex-card-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 0;
+      height: 20px;
+      .class-type {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: steelblue;
+      }
+      .class-date {
+        font-size: 1rem;
+      }
+    }
+    .card-image {
+      width: 100%;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .text-area {
+      height: 125px;
+      font-size: 1rem;
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: steelblue;
+      }
+    }
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 5px 0;
+      height: 50px;
+      .class-full {
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: red;
+        margin: 0 auto;
+      }
+      .register-button {
+        text-decoration: none;
+        color: whitesmoke;
+        border: 2px solid maroon;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: 0.5s ease;
+        &:hover {
+          cursor: pointer;
+          background: maroon;
+        }
+      }
+      .card-footer-text {
+        font-size: 1rem;
+      }
+    }
+  }
+}
