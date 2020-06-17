@@ -1,4 +1,4 @@
-# Anywhere-Fitness
+# 💪 Anywhere-Fitness 💪
 
 ## About
 Anywhere Fitness helps people register for and attend organized workout classes without having to sign up for a gym. 
